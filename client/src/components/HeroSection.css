@@ -1,0 +1,100 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 0;
+  min-height: 85vh;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ffb347, #ff9a9e);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 50px;
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  font-size: 68px;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #ffb347, #ff9a9e, #a18cd1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 36px;
+  max-width: 440px;
+}
+
+.hero-btns { display: flex; gap: 16px; margin-bottom: 48px; }
+
+.hero-stats { display: flex; gap: 40px; }
+
+.stat span {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffb347, #ff9a9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+}
+
+.stat p { color: var(--muted); font-size: 13px; margin-top: 2px; }
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 480px;
+}
+
+.hero-shoe-circle {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffeef8, #eef4ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  border: 1px solid #f0e6f6;
+}
+
+.hero-shoe-emoji { font-size: 160px; }
+
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.blob1 { width: 200px; height: 200px; background: #ffb347; top: 30px; right: 30px; }
+.blob2 { width: 150px; height: 150px; background: #ff9a9e; bottom: 60px; left: 40px; }
+.blob3 { width: 120px; height: 120px; background: #a18cd1; top: 50%; right: 10px; }
+
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; text-align: center; }
+  .hero-title { font-size: 44px; }
+  .hero-visual { display: none; }
+  .hero-btns { justify-content: center; }
+  .hero-stats { justify-content: center; }
+}

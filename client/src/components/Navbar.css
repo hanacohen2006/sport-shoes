@@ -1,0 +1,38 @@
+.navbar {
+  background: rgba(253, 246, 240, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #f0e6f6;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.navbar-logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffb347, #ff9a9e, #a18cd1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar-links a:not(.btn) { color: var(--text); }
+.navbar-links a:not(.btn):hover { color: var(--pastel-lavender); transition: color 0.2s; }
+.navbar-username { color: var(--muted); font-size: 13px; }

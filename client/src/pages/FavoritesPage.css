@@ -1,0 +1,23 @@
+
+.fav-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 40px; }
+.fav-header h1 { font-size: 48px; background: linear-gradient(135deg, #ffb347, #ff9a9e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.fav-header p { color: var(--muted); font-size: 14px; }
+
+.fav-empty { text-align: center; padding: 100px 0; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.fav-empty span { font-size: 64px; }
+.fav-empty h3 { font-size: 24px; color: var(--text); }
+.fav-empty p { color: var(--muted); }
+
+.fav-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; }
+
+.fav-card { position: relative; background: var(--surface); border-radius: var(--radius); overflow: hidden; border: 1px solid #f0e6f6; transition: transform 0.2s; }
+.fav-card:hover { transform: translateY(-6px); }
+
+.fav-remove { position: absolute; top: 12px; right: 12px; background: white; border: none; border-radius: 50%; width: 32px; height: 32px; font-size: 14px; color: #ff9a9e; z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: background 0.2s; }
+.fav-remove:hover { background: #ff9a9e; color: white; }
+
+.shoe-card-img { background: #ffeef8; height: 180px; display: flex; align-items: center; justify-content: center; font-size: 70px; }
+.shoe-card-info { padding: 16px; }
+.shoe-card-info h3 { font-size: 16px; margin-bottom: 4px; color: var(--text); }
+.shoe-brand { color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+.shoe-price { font-size: 18px; font-weight: 700; background: linear-gradient(135deg, #ffb347, #ff9a9e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
