@@ -11,7 +11,7 @@ function ShopPage() {
   const [filters, setFilters] = useState({ brand: '', sport: '', maxPrice: 2000, isSale: false })
 
   useEffect(() => {
-    getAllShoes()
+    getPublicShoes()
       .then(data => { setShoes(Array.isArray(data) ? data : []); setFiltered(Array.isArray(data) ? data : []) })
       .finally(() => setLoading(false))
   }, [])

@@ -91,3 +91,7 @@ export const updateOrderStatus = async (id, status) => {
     })
     return res.json()
 }
+export const getPublicShoes = async () => {
+    const res = await fetch(`${API_URL}/shoe/public`)
+    return res.json()
+}

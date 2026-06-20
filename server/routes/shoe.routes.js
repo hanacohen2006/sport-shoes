@@ -14,9 +14,11 @@ import { validateSchema } from '../middlewares/validateSchema.middleware.js'
 
 const router = Router()
 
-router.get('/', printHello, auth, sendStartDate, getAllShoes)
+router.get('/', printHello, auth, sendStartDate, getAllShoes)  // admin בלבד
+router.get('/public', getAllPublicShoes)  // לכולם
 
 router.get('/full', getFullShoe)
+router.get('/public', getAllPublicShoes)
 
 router.get('/getById/:id', getShoeById)
 

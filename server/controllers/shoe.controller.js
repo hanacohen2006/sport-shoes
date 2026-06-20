@@ -108,3 +108,11 @@ export const deleteShoe = async (req, res, next) => {
         return next({ error })
     }
 }
+export const getAllPublicShoes = async (req, res, next) => {
+    try {
+        const shoes = await Shoe.find()
+        res.json(shoes)
+    } catch (error) {
+        return next({ error })
+    }
+}
