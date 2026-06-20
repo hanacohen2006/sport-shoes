@@ -1,0 +1,24 @@
+{
+  "name": "sports-shoes-store",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app",
+    "dev": "node --watch app"
+  },
+  "keywords": ["shoes", "sports", "store"],
+  "author": "",
+  "license": "ISC",
+  "description": "Sports shoes store server",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.1.0",
+    "joi": "^18.1.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.4.1",
+    "morgan": "^1.10.1"
+  }
+}
